@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Palatino.ttc">
+            <string>Palatino-Bold</string>
+            <string>Palatino-BoldItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-Fs-eXZ">
+                                <rect key="frame" x="20" y="40" width="728" height="150"/>
+                                <color key="backgroundColor" white="0.93876713173730031" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="sTO-jo-8uM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-Bk-7WZ">
+                                <rect key="frame" x="192" y="704" width="384" height="120"/>
+                                <color key="backgroundColor" red="0.65021683978293221" green="0.49789662491459991" blue="0.59604112991512537" alpha="0.35068221830985913" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="eCc-O6-lby"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="recolour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ff9-cW-A0h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4T6-8T-q4W"/>
+                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jK-Su-VKD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lf-Fs-eXZ" secondAttribute="trailing" constant="20" id="Gue-gM-4uk"/>
+                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hac-cN-9gc"/>
+                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nu8-SQ-4mG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yMg-Bk-7WZ" secondAttribute="bottom" constant="200" id="Twi-J3-7WQ"/>
+                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YJ7-8e-qu1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn" destination="yMg-Bk-7WZ" id="AGG-27-s0y"/>
+                        <outlet property="myLabel" destination="3Lf-Fs-eXZ" id="j4i-Lf-kqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76.5625" y="133.0078125"/>
+        </scene>
+    </scenes>
+</document>

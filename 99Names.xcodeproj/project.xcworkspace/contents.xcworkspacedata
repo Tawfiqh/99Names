@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:HelloWorld.xcodeproj">
+      location = "self:/Users/tawfiq/Documents/My Programs/iPhone/HelloWorld/99Names.xcodeproj">
    </FileRef>
 </Workspace>

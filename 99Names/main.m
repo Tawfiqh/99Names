@@ -1,6 +1,6 @@
 //
 //  main.m
-//  HelloWorld
+//  99Names
 //
 //  Created by Tawfiq Hamid on 27/01/2018.
 //  Copyright © 2018 Tawfiq Hamid. All rights reserved.
