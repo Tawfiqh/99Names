@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface fullName : NSObject {
-    NSString* primary;
-    NSString* secondary;
-    NSString* desc;
+
 }
+
++(id)initWithPrimaryName:(NSString*)primary secondaryName:(NSString*)secondary andDescription:(NSString*)description;
+
+@property NSString* primary;
+@property NSString* secondary;
+@property NSString* desc;
 @end

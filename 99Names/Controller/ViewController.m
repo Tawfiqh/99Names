@@ -26,6 +26,8 @@
 }
 - (void)setLabelFromDataSource {
     NSString* data = [ourData getDatum];
+    [data characterAtIndex:4];
+    
     [_primary setText:data];
     [_secondary setText:data];
 }
