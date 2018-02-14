@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38AD5E702034B92C00A07905 /* 99NamesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AD5E6F2034B92C00A07905 /* 99NamesModel.m */; };
+		38AD5E732034CFBF00A07905 /* fullName.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AD5E722034CFBF00A07905 /* fullName.m */; };
 		691C5E012025E7810019D564 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C5E002025E7810019D564 /* DataSource.m */; };
 		691C5E05202604B80019D564 /* FactFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 691C5E04202604B80019D564 /* FactFinder.m */; };
 		69CEDA9B201D422E00E59E81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CEDA9A201D422E00E59E81 /* AppDelegate.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38AD5E6E2034B92C00A07905 /* 99NamesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 99NamesModel.h; sourceTree = "<group>"; };
+		38AD5E6F2034B92C00A07905 /* 99NamesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 99NamesModel.m; sourceTree = "<group>"; };
+		38AD5E712034CFBF00A07905 /* fullName.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fullName.h; sourceTree = "<group>"; };
+		38AD5E722034CFBF00A07905 /* fullName.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fullName.m; sourceTree = "<group>"; };
 		691C5DFF2025E7810019D564 /* DataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		691C5E002025E7810019D564 /* DataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
 		691C5E03202604B80019D564 /* FactFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactFinder.h; sourceTree = "<group>"; };
@@ -52,6 +58,10 @@
 				691C5E002025E7810019D564 /* DataSource.m */,
 				691C5E03202604B80019D564 /* FactFinder.h */,
 				691C5E04202604B80019D564 /* FactFinder.m */,
+				38AD5E6E2034B92C00A07905 /* 99NamesModel.h */,
+				38AD5E6F2034B92C00A07905 /* 99NamesModel.m */,
+				38AD5E712034CFBF00A07905 /* fullName.h */,
+				38AD5E722034CFBF00A07905 /* fullName.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,9 +186,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38AD5E702034B92C00A07905 /* 99NamesModel.m in Sources */,
 				691C5E05202604B80019D564 /* FactFinder.m in Sources */,
 				69CEDA9E201D422E00E59E81 /* ViewController.m in Sources */,
 				69CEDAA9201D422E00E59E81 /* main.m in Sources */,
+				38AD5E732034CFBF00A07905 /* fullName.m in Sources */,
 				691C5E012025E7810019D564 /* DataSource.m in Sources */,
 				69CEDA9B201D422E00E59E81 /* AppDelegate.m in Sources */,
 			);

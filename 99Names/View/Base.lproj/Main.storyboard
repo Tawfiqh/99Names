@@ -25,7 +25,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-Fs-eXZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-Fs-eXZ">
                                 <rect key="frame" x="20" y="40" width="728" height="150"/>
                                 <color key="backgroundColor" white="0.93876713173730031" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -34,6 +34,9 @@
                                 <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="57"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="24"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-Bk-7WZ">
                                 <rect key="frame" x="192" y="704" width="384" height="120"/>
@@ -47,22 +50,41 @@
                                     <action selector="recolour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ff9-cW-A0h"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="38X-uP-j5W">
+                                <rect key="frame" x="30" y="200" width="708" height="150"/>
+                                <color key="backgroundColor" white="0.93876713170000003" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="IxI-bc-31Y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jkM-wL-X2F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="57"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="24"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4T6-8T-q4W"/>
                             <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jK-Su-VKD"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8L6-W9-t0p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lf-Fs-eXZ" secondAttribute="trailing" constant="20" id="Gue-gM-4uk"/>
                             <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hac-cN-9gc"/>
                             <constraint firstItem="yMg-Bk-7WZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nu8-SQ-4mG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="38X-uP-j5W" secondAttribute="trailing" constant="30" id="QVa-a5-wR7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yMg-Bk-7WZ" secondAttribute="bottom" constant="200" id="Twi-J3-7WQ"/>
                             <constraint firstItem="yMg-Bk-7WZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YJ7-8e-qu1"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dig-RP-x83"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="top" secondItem="3Lf-Fs-eXZ" secondAttribute="bottom" constant="10" id="gmi-kf-A7S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="btn" destination="yMg-Bk-7WZ" id="AGG-27-s0y"/>
-                        <outlet property="myLabel" destination="3Lf-Fs-eXZ" id="j4i-Lf-kqD"/>
+                        <outlet property="primary" destination="3Lf-Fs-eXZ" id="lam-aN-Ag0"/>
+                        <outlet property="secondary" destination="38X-uP-j5W" id="PYk-5n-4pw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
