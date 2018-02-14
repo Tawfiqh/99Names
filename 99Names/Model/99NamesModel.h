@@ -7,6 +7,7 @@
 //
 
 #import "DataSource.h"
+#import "fullName.h"
 
 @interface _9NamesModel : DataSource{
     int currentName;
