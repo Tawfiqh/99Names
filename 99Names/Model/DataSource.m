@@ -10,10 +10,10 @@
 
 @implementation DataSource
 
--(NSString*)getDatum{
+-(FullName*)getDatum{
     
     
-    return @"Dummy implementation";
+    return [FullName new];
 }
 
 @end

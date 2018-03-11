@@ -14,11 +14,13 @@
 @interface ViewController : UIViewController{
     
     BOOL colourful;
-    DataSource *ourData;
+    DataSource *ourDataSource;
 
 }
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UILabel *secondary;
+@property (weak, nonatomic) IBOutlet UILabel *descript;
+@property (weak, nonatomic) IBOutlet UILabel *translation;
 
 @property (weak, nonatomic) IBOutlet UILabel *primary;
 
