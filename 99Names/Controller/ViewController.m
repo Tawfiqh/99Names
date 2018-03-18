@@ -24,6 +24,7 @@
     
     
     colourful = false;
+    [self setLabelFromDataSource];
 }
 - (void)setLabelFromDataSource {
     FullName* data = [ourDataSource getDatum];
@@ -36,7 +37,7 @@
 }
 
 - (IBAction)recolour:(id)sender {
-    self.setLabelFromDataSource;
+    [self setLabelFromDataSource];
     
 //    if(colourful){
 //        [_primary setTextColor:[UIColor blackColor]];
