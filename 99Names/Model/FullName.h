@@ -8,13 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface fullName : NSObject {
+@interface FullName : NSObject {
 
 }
 
-+(id)initWithPrimaryName:(NSString*)primary secondaryName:(NSString*)secondary andDescription:(NSString*)description;
++(id)newWithPrimaryName:(NSString*)primary
+          secondaryName:(NSString*)secondary
+            description:(NSString*)description
+         andTranslation:(NSString*)translation;
+        
 
 @property NSString* primary;
 @property NSString* secondary;
 @property NSString* desc;
+@property NSString* translation;
+
 @end

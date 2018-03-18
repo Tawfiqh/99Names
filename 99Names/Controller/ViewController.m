@@ -20,16 +20,19 @@
     _btn.layer.cornerRadius = 10;
     [_btn.layer setCornerRadius:10];
     
-    ourData = [_9NamesModel new];
-
+    ourDataSource = [_9NamesModel new];
+    
+    
     colourful = false;
 }
 - (void)setLabelFromDataSource {
-    NSString* data = [ourData getDatum];
-    [data characterAtIndex:4];
+    FullName* data = [ourDataSource getDatum];
     
-    [_primary setText:data];
-    [_secondary setText:data];
+    [_primary setText:data.primary];
+    [_secondary setText:[data secondary]];
+    [_descript setText:data.desc];
+    [_translation setText:data.translation];
+    
 }
 
 - (IBAction)recolour:(id)sender {

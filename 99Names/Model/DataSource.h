@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "FullName.h"
 @interface DataSource : NSObject{
     
 }
 
--(NSString*)getDatum;
+-(FullName*)getDatum;
 
 
 @end

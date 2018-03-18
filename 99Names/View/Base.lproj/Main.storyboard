@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,6 +13,7 @@
         <array key="Palatino.ttc">
             <string>Palatino-Bold</string>
             <string>Palatino-BoldItalic</string>
+            <string>Palatino-Italic</string>
         </array>
     </customFonts>
     <scenes>
@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-Fs-eXZ">
-                                <rect key="frame" x="20" y="40" width="728" height="150"/>
+                                <rect key="frame" x="30" y="40" width="708" height="150"/>
                                 <color key="backgroundColor" white="0.93876713173730031" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="sTO-jo-8uM"/>
@@ -38,18 +38,6 @@
                                     <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="24"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-Bk-7WZ">
-                                <rect key="frame" x="192" y="704" width="384" height="120"/>
-                                <color key="backgroundColor" red="0.65021683978293221" green="0.49789662491459991" blue="0.59604112991512537" alpha="0.35068221830985913" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="eCc-O6-lby"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="recolour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ff9-cW-A0h"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="38X-uP-j5W">
                                 <rect key="frame" x="30" y="200" width="708" height="150"/>
                                 <color key="backgroundColor" white="0.93876713170000003" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,27 +52,67 @@
                                     <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="24"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zzq-Oe-BrH">
+                                <rect key="frame" x="30" y="360" width="708" height="150"/>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOh-Tg-ycH">
+                                <rect key="frame" x="30" y="993.5" width="708" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-Bk-7WZ">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <color key="backgroundColor" red="0.052486917100151215" green="0.1673413212435233" blue="0.050742884278809644" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="recolour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ff9-cW-A0h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="1AV-Fk-hnr"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2VX-h5-8b2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rOh-Tg-ycH" secondAttribute="bottom" constant="10" id="2zV-ce-Dyq"/>
                             <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4T6-8T-q4W"/>
-                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6jK-Su-VKD"/>
-                            <constraint firstItem="38X-uP-j5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8L6-W9-t0p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lf-Fs-eXZ" secondAttribute="trailing" constant="20" id="Gue-gM-4uk"/>
+                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="B0J-l4-gRa"/>
                             <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hac-cN-9gc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="38X-uP-j5W" secondAttribute="trailing" constant="30" id="I2k-Es-AOh"/>
+                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IXX-hM-WSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zzq-Oe-BrH" secondAttribute="trailing" constant="30" id="K9r-m8-cBy"/>
+                            <constraint firstItem="rOh-Tg-ycH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="NLU-zZ-3m7"/>
                             <constraint firstItem="yMg-Bk-7WZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nu8-SQ-4mG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="38X-uP-j5W" secondAttribute="trailing" constant="30" id="QVa-a5-wR7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yMg-Bk-7WZ" secondAttribute="bottom" constant="200" id="Twi-J3-7WQ"/>
-                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YJ7-8e-qu1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOh-Tg-ycH" secondAttribute="trailing" constant="30" id="Ti3-nR-ysp"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V8U-Or-1BA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lf-Fs-eXZ" secondAttribute="trailing" constant="30" id="Wu8-0g-VFN"/>
+                            <constraint firstItem="Zzq-Oe-BrH" firstAttribute="height" secondItem="3Lf-Fs-eXZ" secondAttribute="height" id="aRg-8f-tYf"/>
+                            <constraint firstItem="yMg-Bk-7WZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cXB-Vk-wn5"/>
                             <constraint firstItem="38X-uP-j5W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dig-RP-x83"/>
+                            <constraint firstItem="Zzq-Oe-BrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ean-EN-h6z"/>
+                            <constraint firstItem="Zzq-Oe-BrH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fte-Us-tSS"/>
                             <constraint firstItem="38X-uP-j5W" firstAttribute="top" secondItem="3Lf-Fs-eXZ" secondAttribute="bottom" constant="10" id="gmi-kf-A7S"/>
+                            <constraint firstItem="Zzq-Oe-BrH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUC-IM-Lxx"/>
+                            <constraint firstItem="Zzq-Oe-BrH" firstAttribute="top" secondItem="38X-uP-j5W" secondAttribute="bottom" constant="10" id="js1-1h-ZAf"/>
+                            <constraint firstItem="3Lf-Fs-eXZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nvl-OO-f82"/>
+                            <constraint firstItem="38X-uP-j5W" firstAttribute="height" secondItem="3Lf-Fs-eXZ" secondAttribute="height" id="pD7-6m-5mu"/>
+                            <constraint firstItem="rOh-Tg-ycH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qmm-Hk-lT8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="btn" destination="yMg-Bk-7WZ" id="AGG-27-s0y"/>
+                        <outlet property="descript" destination="rOh-Tg-ycH" id="Kqd-kO-Dnp"/>
                         <outlet property="primary" destination="3Lf-Fs-eXZ" id="lam-aN-Ag0"/>
                         <outlet property="secondary" destination="38X-uP-j5W" id="PYk-5n-4pw"/>
+                        <outlet property="translation" destination="Zzq-Oe-BrH" id="oEu-l3-HEL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
